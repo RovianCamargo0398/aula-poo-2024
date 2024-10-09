@@ -1,82 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #e60012;
-    color: #fff;
-    padding: 10px 0;
+.home-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
-}
-
-header .logo {
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+  }
+  
+  .header {
     display: flex;
     align-items: center;
-}
-
-header .logo img {
+  }
+  
+  .bank-icon {
     width: 50px;
     height: 30px;
-    margin-right: 10px;
-}
-
-header .logo h1 {
-    font-size: 24px;
-}
-
-nav ul {
-    list-style: none;
+    margin-right: 10px; /* Espaçamento entre o ícone e o título */
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Espaçamento acima do botão */
     display: flex;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
-}
-
-main .welcome h2 {
-    font-size: 28px;
-    color: #e60012;
-}
-
-main .welcome p {
-    font-size: 16px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    justify-content: center;
+  }
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% da altura da viewport */
+    background-color: #f0f0f0; /* Cor de fundo suave */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bank-icon {
+    width: 50px;
+    height: 30px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o título */
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Espaçamento acima do botão */
+    display: flex;
+    justify-content: center;
+  }
