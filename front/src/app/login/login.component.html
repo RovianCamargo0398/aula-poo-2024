@@ -1,22 +1,28 @@
-<div id="centro">
-    <p class="text-blue-600 font-bold mb-3"><i class="pi pi-discord"></i>Informe suas credenciais de acesso</p>
-    <table>
-      <tr>
-        <td>CPF/CNPJ:</td>
-        <td>
-          <input pInputText type="text">
-        </td>
-      </tr>
-      <tr>
-        <td>Senha:</td>
-        <td>
-          <input pInputText type="password" name="" id="">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button pButton (click)="fazerLogin()">Entrar</button>
-        </td>
-      </tr>
-    </table>
+<div class="centered-form">
+    <div class="container">
+        <h1 class="titulo"></h1>
+        
+        <!-- Opções de tipo de cliente como texto -->
+        <div class="tipo-cliente">
+            <span class="tipo-cliente__texto">Pessoa Física</span>
+            <span class="separador">|</span>
+            <span class="tipo-cliente__texto">Pessoa Jurídica</span>
+        </div>
+
+        <div class="formulario">
+            <h1 class="formulario__titulo">Login</h1> <!-- Adicionando título "Login" na caixa -->
+            <form action="">
+                <div class="formulario__conteudo">
+                    <input type="text" class="campo__cadastro" placeholder="CPF/CNPJ" required>
+                </div>
+                <div class="formulario__conteudo">
+                    <input type="password" class="campo__cadastro" placeholder="Senha" required>
+                </div>
+                <div class="botoes">
+                    <button class="campo__cadastro__salvar w-100" type="button" (click)="fazerLogin()">Acessar conta</button>
+                    <button type="button" class="criar-conta" (click)="cadastrar()">Criar conta</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

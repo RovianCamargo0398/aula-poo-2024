@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Cor de fundo branca */
+    flex-direction: column;
+}
+
+.cabecalho {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 130px;
+    color: white;
+    background-color: #007a33; /* Cor do cabeçalho - Verde Sicredi */
+    display: flex;
+    justify-content: space-between; /* Para alinhar itens lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0 20px; /* Adiciona padding */
+}
+
+.cabecalho__conteudo {
+    display: flex; /* Exibe o nome e saldo lado a lado */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.cabecalho__nome {
+    font-size: 40px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px; /* Espaçamento entre nome e saldo */
+    color: white; /* Cor do texto */
+}
+
+.cabecalho__saldo {
+    font-size: 40px; /* Ajuste o tamanho conforme necessário */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    text-decoration: underline; /* Adiciona um sublinhado */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+.saldo,
+.caixa {
+    font-family: "Oswald", sans-serif;
+    width: 40%;
+    padding: 20px;
+    border: 2px solid #007a33; /* Borda verde Sicredi */
+    border-radius: 20px;
+    background-color: white; /* Cor de fundo das caixas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo dentro da caixa */
+}
+
+.saldo h2 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #333;
+}
+
+.saldo p {
+    font-family: "Oswald", sans-serif;
+    font-size: 44px;
+    color: #007a33; /* Verde Sicredi */
+    margin-top: 1px;
+}
+
+.saldo button {
+    font-family: "Oswald", sans-serif;
+    color: #007a33; /* Verde Sicredi */
+    font-size: 25px;
+    background-color: #f7e12f; /* Amarelo Sicredi */
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.saldo button:hover {
+    background-color: #005d2b; /* Verde escuro Sicredi */
+    color: yellow;
+}
+
+.operacoes {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Primeira linha para o título, segunda linha para os botões */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para os botões */
+    grid-gap: 10px; /* Espaçamento entre os botões */
+    justify-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.operacoes__titulo {
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    grid-column: span 2; /* Faz o título ocupar as duas colunas */
+}
+
+.operacoes__botao {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 100px; /* Ajuste a altura conforme necessário */
+    border-radius: 15%;
+    background-color: #007a33; /* Verde Sicredi */
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.operacoes__botao:hover {
+    background-color: #005d2b; /* Verde escuro Sicredi ao passar o mouse */
+    color: white;
+}

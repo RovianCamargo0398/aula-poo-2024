@@ -1,0 +1,60 @@
+:root {
+    --cor-primaria: #4B9F4E; /* Verde Sicredi */
+    --cor-secundaria: #F5D050; /* Amarelo */
+    --cor-texto: #FFFFFF; /* Branco */
+    --cor-borda: #3C8B3C; /* Verde mais escuro */
+    --cor-fundo: #A8E6CE; /* Verde claro para o fundo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    padding: 20px;
+}
+
+.extrato-container {
+    background-color: var(--cor-texto);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.extrato-titulo {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.extrato-item {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.adicionar-transacao {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.adicionar-transacao:hover {
+    background-color: var(--cor-secundaria);
+}

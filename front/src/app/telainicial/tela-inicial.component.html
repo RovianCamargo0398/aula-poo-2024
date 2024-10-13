@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SICREDI - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="tela-inicial.component.css"> <!-- Referência ao CSS -->
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="sicredi.png" alt="" class="cabecalho__logo">
+        <div class="cabecalho__conteudo">
+            <h1 class="cabecalho__nome">Bem Vindo, Tirulipa</h1>
+            <span class="cabecalho__saldo">
+                Saldo: R$ -7.678,00
+            </span>
+        </div>
+        <button class="cabecalho__conteudo__botao" (click)="sair()">
+            <i class="pi pi-sign-out" style="font-size: 2rem;"></i>
+            <span>Sair</span>
+        </button>
+    </header>
+    <div class="container">
+        <div class="saldo">
+            <h2>Saldo da Conta</h2>
+            <p>R$ -7.678,00</p> <!-- Sempre visível -->
+            <button type="button" (click)="extrato()">Extrato</button>
+        </div>
+        <div class="caixa">
+            <div class="operacoes">
+                <h1 class="operacoes__titulo">Operações</h1>
+                <button class="operacoes__botao">
+                    <img src="investir.png" alt="logo investimentos" class="logo__imagem">
+                    Investir
+                </button>
+                <button class="operacoes__botao" type="button" (click)="pix()">
+                    <img src="pix.png" alt="logo pix" class="logo__imagem">
+                    Pix
+                </button>
+                <button class="operacoes__botao">
+                    <img src="logosaque.png" alt="logo saque" class="logo__imagem">
+                    Saque
+                </button>
+                <button class="operacoes__botao">
+                    <img src="consorcio.png" alt="logo consórcio" class="logo__imagem">
+                    Consórcio
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

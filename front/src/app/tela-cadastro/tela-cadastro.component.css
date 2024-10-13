@@ -1,0 +1,109 @@
+:root {
+  --cor-primaria: #4B9F4E; /* Verde Sicredi */
+  --cor-secundaria: #F5D050; /* Amarelo */
+  --cor-texto: #FFFFFF; /* Branco */
+  --cor-borda: #3C8B3C; /* Verde mais escuro */
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #003B2D; /* Fundo escuro, cor do Sicredi */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.telacadastro {
+  width: 100%; /* Para preencher 100% da largura do contêiner */
+  max-width: 480px; /* Limita a largura máxima */
+}
+
+.titulo {
+  color: var(--cor-primaria);
+  text-align: center;
+  margin-top: -20px;
+  font-size: 40px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #FFFFFF; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombreamento leve */
+}
+
+.form-group {
+  width: 100%; /* Faz com que os grupos ocupem 100% da largura */
+  margin-bottom: 15px; /* Espaçamento entre os grupos */
+}
+
+.label {
+  color: var(--cor-borda); /* Cor do texto do rótulo */
+  font-size: 16px; /* Tamanho da fonte do rótulo */
+  margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+  display: block; /* Faz o rótulo ocupar toda a largura disponível */
+}
+
+.campo__cadastro {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--cor-borda);
+  background-color: transparent;
+  color: var(--cor-borda);
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease; /* Transição suave para mudança de borda */
+}
+
+.campo__cadastro__salvar {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 22px;
+  background-color: var(--cor-primaria); /* Cor de fundo verde */
+  color: var(--cor-texto); /* Texto em branco */
+  border: 2px solid var(--cor-borda); /* Contorno verde */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transição suave para hover */
+}
+
+.campo__cadastro__salvar:hover {
+  background-color: var(--cor-borda); /* Verde mais escuro ao passar o mouse */
+  color: var(--cor-texto); /* Manter texto em branco */
+  border-color: var(--cor-primaria); /* Altera a cor do contorno ao passar o mouse */
+}
+
+.campo__cadastro:hover,
+.campo__cadastro:focus {
+  border-color: var(--cor-borda);
+}
+
+.campo__cadastro:focus {
+  box-shadow: 0 0 5px var(--cor-borda); /* Adiciona um foco visual */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%; /* Ajusta a largura em dispositivos menores */
+  }
+
+  .titulo {
+    font-size: 30px; /* Ajusta o tamanho do título */
+  }
+}

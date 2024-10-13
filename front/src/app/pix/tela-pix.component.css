@@ -1,0 +1,190 @@
+:root {
+    --cor-primaria: #4B9F4E; /* Verde Sicredi */
+    --cor-secundaria: #F5D050; /* Amarelo */
+    --cor-texto: #FFFFFF; /* Branco */
+    --cor-borda: #3C8B3C; /* Verde mais escuro */
+    --cor-fundo: #A8E6CE; /* Verde claro para o fundo */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    background-color: var(--cor-fundo); /* Cor de fundo da container */
+}
+
+.cabecalho {
+    width: 100%;
+    height: 130px;
+    color: var(--cor-texto);
+    background-color: var(--cor-primaria); /* Cor do cabeçalho */
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cabecalho__conteudo {
+    margin-left: 47%;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.cabecalho__conteudo__botao {
+    background-color: var(--cor-primaria); /* Cor do botão */
+    border: none;
+    color: var(--cor-texto);
+    font-size: 32px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cabecalho__conteudo__botao:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-50%) scale(1.05);
+    color: var(--cor-secundaria);
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 100%; /* Faz o card ocupar toda a largura disponível */
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+.card p-floatLabel input {
+    width: 100%; /* Faz o input ocupar toda a largura do card */
+    max-width: 300px; /* Define um limite máximo para a largura do input */
+    padding: 10px; /* Adiciona um padding para melhorar a usabilidade */
+    font-size: 25px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+}
+
+.nova-caixa {
+    position: relative;
+    background-color: #ffffff; /* Cor de fundo da nova caixa (branco) */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    margin-top: 150px;
+    display: flex; /* Adiciona para tornar a caixa flexível */
+    flex-direction: column; /* Coloca os filhos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.nova-caixa__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--cor-secundaria); /* Adiciona fundo amarelo */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+}
+
+.nova-caixa__description {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.minhas-chaves {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Cor de fundo */
+    border: 1px solid #e0e0e0; /* Borda da caixa */
+    border-radius: 8px;
+    width: fit-content;
+    margin: 20px auto; /* Espaçamento acima e abaixo */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.minhas-chaves__description {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.minhas-chaves:hover {
+    background-color: #e0e0e0;
+    border-color: #0070f3; /* Cor da borda ao passar o mouse */
+}
+
+.pix-area {
+    position: relative;
+    background-color: var(--cor-primaria); /* Cor de fundo verde do Sicredi */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 300px;
+    color: var(--cor-texto); /* Cor do texto dentro da caixa */
+}
+
+.pix-area__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-texto); /* Cor do título dentro da área PIX */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pix-area__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; /* Adiciona espaço ao redor do item */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil entre os itens */
+}
+
+.pix-area__item:last-child {
+    border-bottom: none; /* Remove a borda do último item */
+}
+
+.pix-area__description {
+    font-size: 16px;
+    color: var(--cor-texto); /* Cor do texto da descrição */
+}
+
+.pix-area__amount {
+    font-size: 16px;
+    color: var(--cor-texto); /* Cor do valor */
+    font-weight: bold;
+}
+
+.pix-area__date {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8); /* Cor da data com opacidade */
+}
+
+.pix-area__link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--cor-texto); /* Cor do link */
+    text-decoration: none;
+}
+
+.pix-area__link:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { FormsModule } from '@angular/forms';
-import { Correntista } from '../../model/correntista';
 import { CorrentistaService } from '../correntista.service';
+import { Correntista } from '../../app/model/correntista';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
   imports: [InputTextModule, ButtonModule, FormsModule],
-  templateUrl: './cadastro.component.html',
-  styleUrl: './cadastro.component.css'
+  templateUrl: './tela-cadastro.component.html',
+  styleUrl: './tela-cadastro.component.css'
 })
 export class CadastroComponent {
 
-  public dadosCadastrais = new Correntista();
+  dadosCadastrais = new Correntista();
 
   constructor(
     private service: CorrentistaService
