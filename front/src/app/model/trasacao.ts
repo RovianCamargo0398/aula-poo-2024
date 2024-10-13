@@ -2,6 +2,6 @@ export interface Transacao {
     numero: number;
     descricao: string;
     valor: number;
-    data: Date;
+    data_pix: Date;
     operacao: string;
 }

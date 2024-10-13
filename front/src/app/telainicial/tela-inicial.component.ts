@@ -14,10 +14,6 @@ export class TelaInicialComponent {
 
   constructor(private router: Router) {}
 
-  toggleSaldo() {
-    this.isSaldoVisible = !this.isSaldoVisible; // Alterna a visibilidade do saldo
-  }
-
   extrato() {
     this.router.navigate(['/tela-extrato']);
   }

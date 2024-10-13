@@ -7,10 +7,10 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Permite centralizar a caixa verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
     background-color: white; /* Cor de fundo branca */
-    flex-direction: column;
 }
 
 .cabecalho {
@@ -18,11 +18,17 @@ body {
     width: 100%;
     height: 130px;
     color: white;
-    background-color: #007a33; /* Cor do cabeçalho - Verde Sicredi */
+    background-color: #1b9930; /* Cor do cabeçalho - Verde Sicredi */
     display: flex;
     justify-content: space-between; /* Para alinhar itens lado a lado */
     align-items: center; /* Centraliza verticalmente */
     padding: 0 20px; /* Adiciona padding */
+}
+
+.cabecalho__logo {
+    height: 100px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o conteúdo do cabeçalho */
 }
 
 .cabecalho__conteudo {
@@ -46,94 +52,51 @@ body {
 .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    margin-top: 20px;
-    align-items: stretch;
+    justify-content: center; /* Centraliza a caixa horizontalmente */
+    align-items: center; /* Centraliza a caixa verticalmente */
+    margin-top: 20px; /* Espaçamento acima da caixa */
 }
 
-.saldo,
 .caixa {
     font-family: "Oswald", sans-serif;
-    width: 40%;
+    width: 300px; /* Ajuste a largura conforme necessário */
     padding: 20px;
     border: 2px solid #007a33; /* Borda verde Sicredi */
     border-radius: 20px;
-    background-color: white; /* Cor de fundo das caixas */
+    background-color: white; /* Cor de fundo da caixa */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribui o conteúdo dentro da caixa */
-}
-
-.saldo h2 {
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 10px;
-    font-size: 50px;
-    color: #333;
-}
-
-.saldo p {
-    font-family: "Oswald", sans-serif;
-    font-size: 44px;
-    color: #007a33; /* Verde Sicredi */
-    margin-top: 1px;
-}
-
-.saldo button {
-    font-family: "Oswald", sans-serif;
-    color: #007a33; /* Verde Sicredi */
-    font-size: 25px;
-    background-color: #f7e12f; /* Amarelo Sicredi */
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.saldo button:hover {
-    background-color: #005d2b; /* Verde escuro Sicredi */
-    color: yellow;
 }
 
 .operacoes {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr; /* Primeira linha para o título, segunda linha para os botões */
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas para os botões */
-    grid-gap: 10px; /* Espaçamento entre os botões */
-    justify-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    display: flex; /* Alinha os botões em uma coluna */
+    flex-direction: column; /* Coloca os botões um embaixo do outro */
+    gap: 10px; /* Espaçamento entre os botões */
 }
 
 .operacoes__titulo {
     font-family: "Oswald", sans-serif;
-    font-size: 45px;
+    font-size: 24px;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
-    grid-column: span 2; /* Faz o título ocupar as duas colunas */
 }
 
 .operacoes__botao {
     font-family: "Oswald", sans-serif;
     width: 100%;
-    height: 100px; /* Ajuste a altura conforme necessário */
-    border-radius: 15%;
+    height: 60px; /* Ajuste a altura conforme necessário */
+    border-radius: 10px; /* Menor arredondamento para o botão */
     background-color: #007a33; /* Verde Sicredi */
     color: white;
     border: none;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     cursor: pointer;
-    text-align: center;
     padding: 10px;
     box-sizing: border-box;
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .operacoes__botao:hover {
